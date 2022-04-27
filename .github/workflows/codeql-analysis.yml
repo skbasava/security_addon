@@ -63,7 +63,7 @@ jobs:
     #    uses a compiled language
 
     - run: |
-       sudo bash Scripts/reference/install_host_deps.sh
+       sudo bash setup_prerequisites_kvm.sh
        make clean all
        make package
 
